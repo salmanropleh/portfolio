@@ -1,0 +1,61 @@
+/* style.css */
+
+/* Background image for the whole page */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('images/profile.jpg'); /* Make sure the image path is correct */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    color: white; /* Make text visible on a dark image */
+    min-height: 100vh;
+  }
+
+  
+  body::before {
+    content: "";
+    position: fixed;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background: rgba(0, 0, 0, 0.5); /* black overlay with 50% opacity */
+    z-index: -1;
+  }
+  
+  /* Optional dark overlay for readability */
+  section, header, footer {
+    background-color: rgba(0, 0, 0, 0.6); /* Semi-transparent black */
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 10px;
+  }
+  
+  /* Header */
+  header {
+    text-align: center;
+  }
+  
+  /* Navigation bar */
+  nav ul {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  nav a {
+    color: white;
+    text-decoration: none;
+  }
+  
+  /* Section spacing */
+  section {
+    padding: 2rem;
+  }
+  
+  /* Footer styling */
+  footer {
+    text-align: center;
+    padding: 1rem;
+  }
