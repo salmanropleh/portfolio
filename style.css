@@ -5,7 +5,7 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('images/profile.jpg'); /* Make sure the image path is correct */
+    background-image: url('profile.jpg'); /* Make sure the image path is correct */
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
